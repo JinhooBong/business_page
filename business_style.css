@@ -31,6 +31,8 @@ body {
     letter-spacing: 1rem;
     text-align: left;
     color: #fafafa;
+    border-left: 4px solid #fafafa;
+    padding-left: 5%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -69,3 +71,8 @@ nav {
     .nav-item {
         margin: 0 2%;
     }
+
+
+.diff {
+    color: #F56301;
+}
