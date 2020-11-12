@@ -7,13 +7,37 @@
     font-family: aeonik-light;
     src: url("Aeonik/Aeonik-Thin.otf");
 }
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: #1D1D20 !important;
+    margin: 0;
+    padding: 0;
 }
 
+.container-fluid {
+    padding: 0 !important;
+}
+
+/* NAVBAR SECTION */
+
+nav {
+    font-family: 'aeonik-light';
+    font-size: 1.1rem;
+    color: #fafafa;
+}
+
+    .nav-item {
+        margin: 0 2%;
+    }
+
+/* HERO SECTION */
 #header {
-    height: 90vh;
+    height: 100vh;
     background-color: #1D1D20;
     display: flex;
     align-items: center;
@@ -35,25 +59,6 @@ body {
     padding-left: 5%;
 }
 
-@media only screen and (max-width: 768px) {
-    #title {
-        letter-spacing: 0.2rem;
-        font-size: 3.5rem;
-    }
-    #subtext {
-        font-size: 16px !important;
-    }
-}
-
-@media only screen and (max-width: 375px) {
-    #title {
-        margin-left: 15%;
-    }
-    #subtext {
-        margin-left: 15%;
-    }
-}
-
 #subtext {
     font-size: 1rem;
     color: #818185;
@@ -62,17 +67,99 @@ body {
     letter-spacing: 0px;
 }
 
-nav {
-    font-family: 'aeonik-light';
-    font-size: 1.1rem;
-    color: #fafafa;
+/* ABOUT SECTION  */
+
+#about {
+    background-color: #fcfcfc;
+    /* background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%); */
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
 }
 
-    .nav-item {
-        margin: 0 2%;
+#about_box {
+    margin: auto;
+    display: flex;
+    padding: 0 15%;
+}
+
+#about_text {
+    padding-top: 6.5rem;
+}
+
+.about {
+    font-family: 'aeonik-light';
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.bold {
+    font-family: 'aeonik';
+    font-size: 1.5rem;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+
+/* PORTFOLIO SECTION  */
+#portfolio {
+    height: 70vh;
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 5%;
+}
+
+
+/* IPAD SCREEN SIZE  */
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        width: 95%;
     }
 
+    #header_lottie {
+        width: 350px !important;
+        height: 350px !important;
+    }
 
-.diff {
-    color: #F56301;
+    #title {
+        letter-spacing: 0.2rem;
+        font-size: 3.5rem;
+    }
+    #subtext {
+        font-size: 16px !important;
+    }
+
+    #about_text {
+        padding-top: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    
+}
+
+/* IPHONE SCREEN SIZE  */
+
+@media only screen and (max-width: 375px) {
+    #title {
+        margin-left: 1%;
+    }
+
+    #about_box {
+        padding: 0;
+    }
+
+    #about_lottie {
+        width: 300px !important;
+        height: 300px !important;
+        margin: auto;
+    }
+
+    #about_text {
+        padding-top: 1rem;
+    }
 }
